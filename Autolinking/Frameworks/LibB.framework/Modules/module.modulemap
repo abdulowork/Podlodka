@@ -1,0 +1,11 @@
+framework module LibB {
+  umbrella header "LibB.h"
+
+  export *
+  module * { export * }
+}
+
+module LibB.Swift {
+    header "LibB-Swift.h"
+    requires objc
+}
